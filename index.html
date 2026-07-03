@@ -17,12 +17,2705 @@
 const SUPABASE_URL='https://afbzsjvvlunfzdtcwxhs.supabase.co';
 const SUPABASE_KEY='sb_publishable_SxRN9CnxQyo-qWj2kUXkvg_bHi6G9C5';
 const store='seo-dashboard-v2';
-const demo=[{id:crypto.randomUUID(),name:'Clinic SEO Revamp',url:'https://example-clinic.ru',theme:'Медицина',region:'Москва',description:'Рабочая панель SEO-проекта: структура, семантика, контент-план, ссылки и документы в одном окне.',structure:{positioning:'Коммерческий медицинский сайт с услугами, врачами, ценами и локальной выдачей.',audience:'Пациенты, выбирающие клинику по услуге, врачу, цене и району.',sections:['Главная','Услуги','Врачи','Цены','Отзывы','Блог','Контакты'],aiTools:['Ollama: первичная тематика','Parser: title/h1/meta/sitemap','GPT: редактура ТЗ и контент-плана']},semantic:[{keyword:'лечение кариеса цена',frequency:2400},{keyword:'стоматология рядом',frequency:1900},{keyword:'записаться к стоматологу',frequency:880}],content:[{id:crypto.randomUUID(),title:'Как выбрать стоматолога: чеклист пациента',type:'Блог',link:'',done:false},{id:crypto.randomUUID(),title:'Страница услуги: лечение кариеса',type:'Коммерческая',link:'https://example-clinic.ru/services/caries',done:true}],links:[{id:crypto.randomUUID(),donor:'med-directory.example',anchor:'стоматология в Москве',target:'/services',price:4500,status:'В переговорах',dr:38,traffic:12000}],docs:[{id:crypto.randomUUID(),title:'ТЗ на структуру услуг',type:'Документ',url:'',note:'Согласовать с SEO и редактором.'}]}];
+const demo=[
+  {
+    "id": "vault-1-pa-ru",
+    "name": "1-pa.ru",
+    "url": "https://1-pa.ru",
+    "theme": "образование, обучение по охране труда и промышленной безопасности",
+    "region": "Москва",
+    "description": "«Первая Промышленная Академия» — учебный центр повышения квалификации и переподготовки: охрана труда, пожарная безопасность, промышленная безопасность, электробезопасность, рабочие профессии. Более 420 направлений обучения. B2B, Москва.",
+    "structure": {
+      "positioning": "«Первая Промышленная Академия» — учебный центр повышения квалификации и переподготовки: охрана труда, пожарная безопасность, промышленная безопасность, электробезопасность, рабочие профессии. Более 420 направлений обучения. B2B, Москва.",
+      "audience": "предприятия и сотрудники, нуждающиеся в сертификации/обучении",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [
+      {
+        "keyword": "обучение по охране труда",
+        "frequency": 113021
+      },
+      {
+        "keyword": "удостоверение по охране труда",
+        "frequency": 7150
+      },
+      {
+        "keyword": "обучение специалистов по охране труда",
+        "frequency": 6871
+      },
+      {
+        "keyword": "курсы по охране труда",
+        "frequency": 4843
+      },
+      {
+        "keyword": "повышение квалификации по охране труда",
+        "frequency": 1782
+      },
+      {
+        "keyword": "обучение охране труда дистанционно",
+        "frequency": 2023
+      },
+      {
+        "keyword": "обучение охране труда онлайн",
+        "frequency": 620
+      },
+      {
+        "keyword": "кто должен проходить обучение по охране труда",
+        "frequency": 366
+      },
+      {
+        "keyword": "обучение по охране труда в москве",
+        "frequency": 77
+      },
+      {
+        "keyword": "обучение по охране труда для организаций",
+        "frequency": 0
+      },
+      {
+        "keyword": "обучение по пожарной безопасности",
+        "frequency": 20358
+      },
+      {
+        "keyword": "курсы пожарно-технического минимума",
+        "frequency": 20358
+      },
+      {
+        "keyword": "пожарно-технический минимум обучение",
+        "frequency": 1751
+      },
+      {
+        "keyword": "повышение квалификации по пожарной безопасности",
+        "frequency": 2637
+      },
+      {
+        "keyword": "удостоверение по пожарной безопасности",
+        "frequency": 1977
+      },
+      {
+        "keyword": "обучение пожарной безопасности дистанционно",
+        "frequency": 404
+      },
+      {
+        "keyword": "обучение по промышленной безопасности",
+        "frequency": 2524
+      },
+      {
+        "keyword": "аттестация по промышленной безопасности",
+        "frequency": 2524
+      }
+    ],
+    "content": [
+      {
+        "id": "1c096f58-6a66-4f79-9267-dd57f94c7232",
+        "title": "Требования Ростехнадзора по тестированию / Тестирование в ЕИСОТ",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "7e8f7140-0657-4427-82f0-4bc153249dff",
+        "title": "Изменения для специалистов по ОТ с 1 сентября 2023",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "b42397eb-b812-43cd-a5fe-82686f68d428",
+        "title": "Штрафы за нарушения противопожарной безопасности",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "5d0cbcb5-4dcd-4938-b3f6-6e1a03f7f35e",
+        "title": "Обучение использованию и применению СИЗ (без норм выдачи ЕТН — тема открыта)",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "63a7d49c-872e-4a25-b66d-baefa0efa7d2",
+        "title": "Обучение по электробезопасности / Электробезопасность: правила и требования",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "85d612e0-b1f8-45c8-86dd-c3993d07d686",
+        "title": "Кто обязан пройти обучение по электробезопасности",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "47ec423f-9730-4d3b-ada4-dd751f614ec8",
+        "title": "Кто может быть ответственным за пожарную безопасность",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "a6585e80-4353-4d46-b9c8-86df579c5c20",
+        "title": "Инструктажи по охране труда: как и когда проводить",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "2e9cefd7-c181-4add-88e1-2a8834699418",
+        "title": "Как правильно оказать первую помощь / Обучение оказанию первой помощи",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "80759a77-edc2-40dd-81ab-45fee9499e87",
+        "title": "Требования к обучению промышленной безопасности в организации",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "6af12a18-471d-456e-9572-5875103d84d4",
+        "title": "Основные ошибки в оценке профессиональных рисков",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "1e3df0e0-bb0a-40f9-a7c7-326624779f93",
+        "title": "Обучение по ГО и ЧС в 2024 году",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "a70ea564-377d-4116-831f-3db27bbe50ca",
+        "title": "СИЗ при работе на высоте",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "c581c92e-bd98-4e9a-bf91-407647604ac6",
+        "title": "Экологическая безопасность на предприятии",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "145f46da-1f38-4ae9-8fc0-832732da8d34",
+        "title": "Возместить деньги на охрану труда из СФР в 2025 году",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "4e7bddf1-1133-4218-be6b-b447051e18ec",
+        "title": "3 группа электробезопасности: требования к образованию, стаж и порядок присвоения",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "dce6d29b-859f-4579-be8b-ec62d876f1aa",
+        "title": "Работы в замкнутых и ограниченных пространствах: группы допуска, документы и меры безопасности",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "b38247d1-f431-4b3d-8509-8c8d93629372",
+        "title": "Декларация пожарной безопасности: кому нужна, как заполнить и подать",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      }
+    ],
+    "links": [
+      {
+        "id": "59bdb7be-889f-40be-8005-be9d3f04ae06",
+        "donor": "tolyatti.cataloxy.ru",
+        "anchor": "обучение охране труда",
+        "target": "/obuchenie-po-ohrane-truda/",
+        "price": 65,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2110
+      },
+      {
+        "id": "db7e5db1-b6dd-4ab3-8c76-e4efbdbb69cc",
+        "donor": "novosibirsk.cataloxy.ru",
+        "anchor": "курсы охраны труда",
+        "target": "/obuchenie-po-ohrane-truda/",
+        "price": 210,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "cef57b13-a878-4974-a866-cfc9aebdc964",
+        "donor": "pfo.volga.news",
+        "anchor": "1ПА",
+        "target": "/",
+        "price": 300,
+        "status": "Из Obsidian",
+        "dr": 70,
+        "traffic": 2400
+      },
+      {
+        "id": "b0e3ebba-fa86-4b0e-a0a0-1b00fc5268dc",
+        "donor": "scbist.com",
+        "anchor": "промышленная безопасность",
+        "target": "/obuchenie-po-promyshlennoy-bezopasnosti/",
+        "price": 370,
+        "status": "Из Obsidian",
+        "dr": 33,
+        "traffic": 1130
+      },
+      {
+        "id": "00a85967-ec32-4de0-9d52-ec6a42a7a928",
+        "donor": "saint-petersburg.employmentcenter.ru",
+        "anchor": "охрана труда обучение",
+        "target": "/obuchenie-po-ohrane-truda/",
+        "price": 399,
+        "status": "Из Obsidian",
+        "dr": 51,
+        "traffic": 310
+      },
+      {
+        "id": "348027ae-b250-47ba-9ebd-b19b6865cedc",
+        "donor": "pedagogic.ru",
+        "anchor": "повышение квалификации по охране труда",
+        "target": "/obuchenie-po-ohrane-truda/",
+        "price": 550,
+        "status": "Из Obsidian",
+        "dr": 29,
+        "traffic": 210
+      },
+      {
+        "id": "6b169934-7d86-4528-8349-d64d1141f4f9",
+        "donor": "voronezh.cataloxy.ru",
+        "anchor": "1-pa.ru",
+        "target": "/",
+        "price": 101,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "45f8894f-c545-4f66-8dc6-91ab61ca7460",
+        "donor": "samara.cataloxy.ru",
+        "anchor": "подробнее",
+        "target": "/",
+        "price": 150,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "710109b2-14a6-4768-9b20-8085557c79ad",
+        "donor": "kaz.meec.com.ru",
+        "anchor": "здесь",
+        "target": "/",
+        "price": 399,
+        "status": "Из Obsidian",
+        "dr": 87,
+        "traffic": 400
+      },
+      {
+        "id": "99e7d66d-5e73-4877-9419-6a8aadc37dcb",
+        "donor": "trud-ost.ru",
+        "anchor": "обучение пожарной безопасности",
+        "target": "/obuchenie-po-pozharnoy-bezopasnosti/",
+        "price": 506,
+        "status": "Из Obsidian",
+        "dr": 45,
+        "traffic": 250
+      },
+      {
+        "id": "ab6b1686-b7a0-4086-84a6-73c4b5979e56",
+        "donor": "templatica.pro",
+        "anchor": "учебный центр охрана труда",
+        "target": "/obuchenie-po-ohrane-truda/",
+        "price": 550,
+        "status": "Из Obsidian",
+        "dr": 18,
+        "traffic": 240
+      },
+      {
+        "id": "f545ef45-78f4-4059-9ce6-b153fbcda7d7",
+        "donor": "apteka.rin.ru",
+        "anchor": "электробезопасность обучение",
+        "target": "/obuchenie-po-elektrobezopasnosti/",
+        "price": 550,
+        "status": "Из Obsidian",
+        "dr": 72,
+        "traffic": 1060
+      },
+      {
+        "id": "6c909c02-52b6-4d97-9db6-8de0be107e1b",
+        "donor": "a2b2.ru",
+        "anchor": "первая промышленная академия",
+        "target": "/",
+        "price": 600,
+        "status": "Из Obsidian",
+        "dr": 33,
+        "traffic": 510
+      },
+      {
+        "id": "ca36dd8f-9d93-4303-bd04-6e6f95f33f21",
+        "donor": "stroy-mart.ru",
+        "anchor": "по ссылке",
+        "target": "/",
+        "price": 640,
+        "status": "Из Obsidian",
+        "dr": 25,
+        "traffic": 240
+      }
+    ],
+    "docs": [
+      {
+        "id": "fbeaa73c-f6b7-4958-9e84-41a9785abeeb",
+        "title": "SEO-аудит — 2026-06-23",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Аудиты/SEO-аудит — 2026-06-23.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Аудиты\\SEO-аудит — 2026-06-23.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "44399cf9-e3da-42c9-8f0c-82119c9d1464",
+        "title": "Технический SEO-аудит — 2026-06-23",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Аудиты/Технический SEO-аудит — 2026-06-23.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Аудиты\\Технический SEO-аудит — 2026-06-23.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "b2cf3443-4459-474a-acdc-16143fc96624",
+        "title": "Вёрстка статей — блоки",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Вёрстка статей — блоки.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Вёрстка статей — блоки.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "d5b5f728-af5c-4c25-93b1-2779614c0f8a",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "dde7ed28-2dce-439a-be9d-a964f689ace9",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Контент-план.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "da3ba523-b552-4ceb-ae9d-f7b09049af8f",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Описание.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "ea62f268-b448-4fcd-a0b9-a71573813310",
+        "title": "Семантика для Топвизора",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Семантика для Топвизора.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Семантика для Топвизора.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "1d5ea26e-1ae9-4e27-8a85-b9ea815ae0e7",
+        "title": "Семантическое ядро",
+        "type": "Семантика",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Семантическое ядро.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Семантическое ядро.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "6a233f5f-3ff3-47cd-9f1e-832748501075",
+        "title": "Июль–Декабрь 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1-pa.ru/Ссылочная закупка/Июль–Декабрь 2026.md",
+        "note": "Obsidian: Проекты\\1-pa.ru\\Ссылочная закупка\\Июль–Декабрь 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  },
+  {
+    "id": "vault-1plab-ru",
+    "name": "1plab.ru",
+    "url": "https://1plab.ru",
+    "theme": "услуги по охране труда для предприятий (аутсорсинг ОТ)",
+    "region": "Москва",
+    "description": "«Первая Промышленная Лаборатория» — услуги по охране труда (СОУТ, оценка профрисков, СУОТ, производственный контроль, обучение) для B2B, Москва. CMS: WordPress + Elementor + Yoast SEO (v27.9, проверено 23.06.2026 — в более старых заметках ошибочно указано «без SEO-плагина», не верить).",
+    "structure": {
+      "positioning": "«Первая Промышленная Лаборатория» — услуги по охране труда (СОУТ, оценка профрисков, СУОТ, производственный контроль, обучение) для B2B, Москва. CMS: WordPress + Elementor + Yoast SEO (v27.9, проверено 23.06.2026 — в более старых заметках ошибочно указано «без SEO-плагина», не верить).",
+      "audience": "Уточняется по заметкам Obsidian",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [
+      {
+        "keyword": "соут",
+        "frequency": 101196
+      },
+      {
+        "keyword": "специальная оценка условий труда",
+        "frequency": 101196
+      },
+      {
+        "keyword": "классы условий труда",
+        "frequency": 47509
+      },
+      {
+        "keyword": "провести соут",
+        "frequency": 16386
+      },
+      {
+        "keyword": "классы условий труда соут",
+        "frequency": 2010
+      },
+      {
+        "keyword": "что такое соут",
+        "frequency": 2561
+      },
+      {
+        "keyword": "внеплановая соут",
+        "frequency": 3258
+      },
+      {
+        "keyword": "сроки проведения соут",
+        "frequency": 1590
+      },
+      {
+        "keyword": "соут для организации",
+        "frequency": 992
+      },
+      {
+        "keyword": "соут цена",
+        "frequency": 990
+      },
+      {
+        "keyword": "соут стоимость / стоимость соут",
+        "frequency": 460
+      },
+      {
+        "keyword": "соут москва",
+        "frequency": 856
+      },
+      {
+        "keyword": "штрафы за отсутствие соут",
+        "frequency": 297
+      },
+      {
+        "keyword": "штраф за отсутствие соут",
+        "frequency": 297
+      },
+      {
+        "keyword": "заказать соут",
+        "frequency": 235
+      },
+      {
+        "keyword": "соут этапы проведения / как проводится соут",
+        "frequency": 176
+      },
+      {
+        "keyword": "штрафы за отсутствие соут 2026",
+        "frequency": 116
+      },
+      {
+        "keyword": "аккредитованная организация соут",
+        "frequency": 116
+      }
+    ],
+    "content": [
+      {
+        "id": "65d83b11-5fa8-4952-aa14-91be48d39914",
+        "title": "Проверки и штрафы: как снизить риски для работодателя",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "1f64b9e0-c9df-4b06-af6d-03545c000bdf",
+        "title": "Изменения законодательства: почему важно следить за требованиями",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "0cdf77d5-c6c7-4e5e-afd3-3b5c6c9db9d5",
+        "title": "Охрана труда: зачем бизнесу системный подход к безопасности",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "53eaa49b-2f8c-42c9-acad-a5313088c965",
+        "title": "СУОТ: почему это больше, чем комплект документов",
+        "type": "Статья",
+        "link": "",
+        "done": true
+      },
+      {
+        "id": "2d96320f-6060-4219-89e1-5cbe6e84ffdd",
+        "title": "СОУТ: что дает специальная оценка условий труда",
+        "type": "Статья",
+        "link": "",
+        "done": true
+      },
+      {
+        "id": "a455f841-c43c-4fe1-85f2-8f132a778c73",
+        "title": "Производственный контроль: зачем проводить исследования и измерения",
+        "type": "Статья",
+        "link": "",
+        "done": true
+      },
+      {
+        "id": "9792e04b-ef3b-46db-80b4-78d056800795",
+        "title": "Оценка профессиональных рисков: как выявить опасности заранее",
+        "type": "Статья",
+        "link": "",
+        "done": true
+      },
+      {
+        "id": "262756d5-4214-4d7a-8154-61a3871f68ef",
+        "title": "Классы условий труда по СОУТ: что означает 2-й, 3-й, 4-й класс и какие льготы дают сотрудникам",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "e2c48aa5-f736-4e04-9575-1a4da8582cfd",
+        "title": "Программа производственного контроля в 2026 году: кто обязан составлять, что включить, образец",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "19e7c952-221f-44d1-a5e1-4fdf6b55cd65",
+        "title": "Расследование несчастного случая на производстве: порядок, обязательные документы и ответственность",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "39f44b35-04ac-4a7a-9233-4e6f60673de3",
+        "title": "Как проходит СОУТ: этапы от заявки до внесения результатов в реестр Минтруда",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "3c569d55-cd02-45e5-950a-18476e527598",
+        "title": "Обучение по охране труда: кто обязан, как часто и что грозит за нарушение",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "8f55a363-e056-4812-b4bf-476339fde2cd",
+        "title": "Внеплановая СОУТ: в каких случаях обязательна, сроки и кто платит",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "aaa75404-e199-49d8-bb35-5dcdba308751",
+        "title": "Положение о СУОТ: что должно быть в документе и типичные ошибки",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "82206df0-c9f1-4b02-9159-cc1b7f4ecc33",
+        "title": "Реестр опасностей рабочих мест: что включить, образец и типичные ошибки",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "1de344b4-ec7b-459a-8952-a478c805ec46",
+        "title": "Нормы шума на рабочих местах: допустимые уровни, как проводят замеры, что делать при превышении",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "d3c1679c-2c15-4899-84bd-d6f87164a8f5",
+        "title": "СОУТ для офисных рабочих мест: какие замеры делают и что чаще нарушают",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "4414e2c0-0d8d-401f-b563-30e3648ceaf1",
+        "title": "Электробезопасность на предприятии: группы допуска 1–5, обучение и удостоверение",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      }
+    ],
+    "links": [
+      {
+        "id": "76ee23de-4021-42a8-86ec-85287c7f72e5",
+        "donor": "pfo.volga.news ⭐⭐⭐",
+        "anchor": "",
+        "target": "/sout/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 70,
+        "traffic": 2400
+      },
+      {
+        "id": "98274e84-d28c-4edc-82a3-6869a6f2275d",
+        "donor": "tolyatti.cataloxy.ru",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2110
+      },
+      {
+        "id": "5883baf1-93a3-43a3-b134-5217a5a5ffe9",
+        "donor": "orenburg.cataloxy.ru",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "840261c8-e4bb-4965-976a-196a1d2fa199",
+        "donor": "krasnodar.cataloxy.ru",
+        "anchor": "",
+        "target": "/sout/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "80e1ac45-5031-431e-bbaf-a1babe043eb3",
+        "donor": "carina-e.ru",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 47,
+        "traffic": 300
+      },
+      {
+        "id": "5986e547-07b6-4155-8f2f-8daf4615cf4a",
+        "donor": "kaz.meec.com.ru ⭐⭐",
+        "anchor": "",
+        "target": "/riski/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 87,
+        "traffic": 400
+      },
+      {
+        "id": "c1443da8-77fc-4637-9a43-3766e60846a8",
+        "donor": "voronezh.cataloxy.ru",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "7ceb4ff1-9e37-427b-8708-efa8bb17aefe",
+        "donor": "samara.cataloxy.ru",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 63,
+        "traffic": 2330
+      },
+      {
+        "id": "fd5f271d-69de-44b1-b7c1-de8f96828406",
+        "donor": "scbist.com ⭐⭐",
+        "anchor": "",
+        "target": "/control/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 33,
+        "traffic": 1130
+      },
+      {
+        "id": "d5835eb1-5c23-456f-911a-90e74712f169",
+        "donor": "spb.meec.com.ru ⭐⭐",
+        "anchor": "",
+        "target": "/sout/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 87,
+        "traffic": 400
+      },
+      {
+        "id": "44003476-a2e5-4fd0-950e-b949039c1c14",
+        "donor": "vesti42.ru ⭐⭐",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 56,
+        "traffic": 970
+      },
+      {
+        "id": "f32e6046-bb45-432b-9159-fcd76c478128",
+        "donor": "apteka.rin.ru ⭐⭐",
+        "anchor": "",
+        "target": "/obuchenie/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 72,
+        "traffic": 1060
+      },
+      {
+        "id": "63391f9c-77cb-49f5-8542-caec51679960",
+        "donor": "trud-ost.ru ⭐⭐",
+        "anchor": "",
+        "target": "/sout/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 45,
+        "traffic": 250
+      },
+      {
+        "id": "620dc85e-6156-44f6-8801-65760e6a7967",
+        "donor": "bankrot.org",
+        "anchor": "",
+        "target": "/",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 29,
+        "traffic": 300
+      }
+    ],
+    "docs": [
+      {
+        "id": "f622ce3e-b9e2-4c0a-804b-8fd186016372",
+        "title": "SEO-аудит — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Аудиты/SEO-аудит — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Аудиты\\SEO-аудит — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "63dafaed-894d-49b7-bff7-e713bf3bb7b5",
+        "title": "ТЗ разработчику — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Аудиты/ТЗ разработчику — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Аудиты\\ТЗ разработчику — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "ac6c54d2-1471-4656-9082-cc5210196c5a",
+        "title": "Технический SEO-аудит — 2026-06-23",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Аудиты/Технический SEO-аудит — 2026-06-23.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Аудиты\\Технический SEO-аудит — 2026-06-23.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "218cd72e-102b-4e95-941f-e4f8d31bc304",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "21ed7d2a-99f6-4750-9ba5-51d32c6a705e",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Контент-план.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "d33a5c48-dd52-4e33-aab2-db41e96a63a4",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Описание.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "b1f1094a-692f-4203-8293-97e2ec1c825a",
+        "title": "Отчёт",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Отчёт.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Отчёт.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "5abc0d7f-5fb4-4f0c-9080-e95dd9bd48ed",
+        "title": "Семантика для Топвизора",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Семантика для Топвизора.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Семантика для Топвизора.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "5aece5ce-af13-42ac-b39b-99f8f7116b6b",
+        "title": "Семантическое ядро",
+        "type": "Семантика",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Семантическое ядро.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Семантическое ядро.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "69c3e4b4-a523-41e8-b964-61d7dea7a8d5",
+        "title": "Июль–Декабрь 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Ссылочная закупка/Июль–Декабрь 2026.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Ссылочная закупка\\Июль–Декабрь 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "aeeb8e91-cc6e-47ee-a42e-35128702654d",
+        "title": "Чек-лист тех. настройки",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/1plab.ru/Чек-лист тех. настройки.md",
+        "note": "Obsidian: Проекты\\1plab.ru\\Чек-лист тех. настройки.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  },
+  {
+    "id": "vault-good-food-goodfood-tlt-ru",
+    "name": "Good Food (goodfood-tlt.ru)",
+    "url": "",
+    "theme": "доставка готовой еды",
+    "region": "Тольятти",
+    "description": "Служба доставки готовой еды в Тольятти (суши, пицца, шашлык, азиатская и европейская кухня). Работает на белолейбловой платформе vsem-edu-oblako.ru (Nuxt/Vue SSR), есть мобильные приложения (iOS, RuStore, Google Play), скидка на день рождения. Время работы 10:00–01:30.",
+    "structure": {
+      "positioning": "Служба доставки готовой еды в Тольятти (суши, пицца, шашлык, азиатская и европейская кухня). Работает на белолейбловой платформе vsem-edu-oblako.ru (Nuxt/Vue SSR), есть мобильные приложения (iOS, RuStore, Google Play), скидка на день рождения. Время работы 10:00–01:30.",
+      "audience": "Уточняется по заметкам Obsidian",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [],
+    "content": [],
+    "links": [],
+    "docs": [
+      {
+        "id": "8aa6a09f-3e59-4f5f-8388-982be36876a0",
+        "title": "SEO-аудит (on-page) — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Good Food (goodfood-tlt.ru)/Аудиты/SEO-аудит (on-page) — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\Good Food (goodfood-tlt.ru)\\Аудиты\\SEO-аудит (on-page) — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "c09f8677-1afe-432e-a5f0-d8b17c7620cb",
+        "title": "Технический SEO-аудит — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Good Food (goodfood-tlt.ru)/Аудиты/Технический SEO-аудит — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\Good Food (goodfood-tlt.ru)\\Аудиты\\Технический SEO-аудит — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "4ebd25e6-f264-4bba-b605-f29412eff19e",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Good Food (goodfood-tlt.ru)/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\Good Food (goodfood-tlt.ru)\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "14e91cc7-4cda-498d-903d-869baf85ea09",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Good Food (goodfood-tlt.ru)/Контент-план.md",
+        "note": "Obsidian: Проекты\\Good Food (goodfood-tlt.ru)\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "ed5ae720-60fc-4b0c-babf-47b933d4644b",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Good Food (goodfood-tlt.ru)/Описание.md",
+        "note": "Obsidian: Проекты\\Good Food (goodfood-tlt.ru)\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "acfc05f0-e6ed-46cc-922a-d1878b20f110",
+        "title": "Отчёт",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Good Food (goodfood-tlt.ru)/Отчёт.md",
+        "note": "Obsidian: Проекты\\Good Food (goodfood-tlt.ru)\\Отчёт.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  },
+  {
+    "id": "vault-avetdigital-ru",
+    "name": "Avet Digital (avetdigital.ru)",
+    "url": "https://avetdigital.ru",
+    "theme": "SEO-проект",
+    "region": "Москва",
+    "description": "SEO-проект",
+    "structure": {
+      "positioning": "SEO-проект",
+      "audience": "B2B — малый и средний бизнес",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [
+      {
+        "keyword": "разработка сайтов",
+        "frequency": 0
+      },
+      {
+        "keyword": "создание сайта под ключ",
+        "frequency": 0
+      },
+      {
+        "keyword": "создание корпоративного сайта",
+        "frequency": 0
+      },
+      {
+        "keyword": "разработка интернет-магазина",
+        "frequency": 0
+      },
+      {
+        "keyword": "создание лендинга",
+        "frequency": 0
+      },
+      {
+        "keyword": "разработка b2b портала",
+        "frequency": 0
+      },
+      {
+        "keyword": "стоимость разработки сайта",
+        "frequency": 0
+      },
+      {
+        "keyword": "сколько стоит сделать сайт",
+        "frequency": 0
+      },
+      {
+        "keyword": "заказать сайт",
+        "frequency": 0
+      },
+      {
+        "keyword": "веб-студия москва",
+        "frequency": 0
+      },
+      {
+        "keyword": "разработка сайтов москва",
+        "frequency": 0
+      },
+      {
+        "keyword": "разработка на 1с",
+        "frequency": 0
+      },
+      {
+        "keyword": "внедрение 1с",
+        "frequency": 0
+      },
+      {
+        "keyword": "интеграция 1с с сайтом",
+        "frequency": 0
+      },
+      {
+        "keyword": "1с под ключ",
+        "frequency": 0
+      },
+      {
+        "keyword": "разработка телеграм бота",
+        "frequency": 0
+      },
+      {
+        "keyword": "создание бота telegram для бизнеса",
+        "frequency": 0
+      },
+      {
+        "keyword": "телеграм бот под ключ",
+        "frequency": 0
+      }
+    ],
+    "content": [],
+    "links": [],
+    "docs": [
+      {
+        "id": "78e0f417-59f6-485b-aa68-5122ed99e475",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/avetdigital.ru/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\avetdigital.ru\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "d163d13e-1a22-4829-9c4b-7dd412086700",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/avetdigital.ru/Контент-план.md",
+        "note": "Obsidian: Проекты\\avetdigital.ru\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "a214e7bf-53e1-4d0a-8358-12554b5eab31",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/avetdigital.ru/Описание.md",
+        "note": "Obsidian: Проекты\\avetdigital.ru\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "e2484ae4-eb36-468b-b5a5-ee97ae06dfa8",
+        "title": "Семантическое ядро",
+        "type": "Семантика",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/avetdigital.ru/Семантическое ядро.md",
+        "note": "Obsidian: Проекты\\avetdigital.ru\\Семантическое ядро.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  },
+  {
+    "id": "vault-dr-prof-ru",
+    "name": "DR PROF (dr-prof.ru)",
+    "url": "https://dr-prof.ru",
+    "theme": "медицина, частная клиника (YMYL)",
+    "region": "Россия",
+    "description": "Медицинский центр (гинекология, урология, эстетическая медицина), YMYL-тематика. Два сайта-бренда: dr-prof.ru и drprof.clinic — закупка ссылок идёт параллельно на оба, но контент/SEO здесь — только по dr-prof.ru.",
+    "structure": {
+      "positioning": "Медицинский центр (гинекология, урология, эстетическая медицина), YMYL-тематика. Два сайта-бренда: dr-prof.ru и drprof.clinic — закупка ссылок идёт параллельно на оба, но контент/SEO здесь — только по dr-prof.ru.",
+      "audience": "Уточняется по заметкам Obsidian",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [
+      {
+        "keyword": "цистит",
+        "frequency": 1167502
+      },
+      {
+        "keyword": "цистит у женщин",
+        "frequency": 266697
+      },
+      {
+        "keyword": "цистит симптомы",
+        "frequency": 69100
+      },
+      {
+        "keyword": "цистит лечение",
+        "frequency": 104543
+      },
+      {
+        "keyword": "частое мочеиспускание у женщин",
+        "frequency": 29724
+      },
+      {
+        "keyword": "цистит у мужчин",
+        "frequency": 36244
+      },
+      {
+        "keyword": "воспаление мочевого пузыря",
+        "frequency": 23867
+      },
+      {
+        "keyword": "цистит у женщин симптомы и лечение",
+        "frequency": 20718
+      },
+      {
+        "keyword": "цистит причины",
+        "frequency": 21134
+      },
+      {
+        "keyword": "острый цистит",
+        "frequency": 18102
+      },
+      {
+        "keyword": "хронический цистит",
+        "frequency": 17088
+      },
+      {
+        "keyword": "признаки цистита",
+        "frequency": 15719
+      },
+      {
+        "keyword": "боль при мочеиспускании у женщин",
+        "frequency": 10007
+      },
+      {
+        "keyword": "посткоитальный цистит",
+        "frequency": 7940
+      },
+      {
+        "keyword": "цистит после полового акта",
+        "frequency": 7341
+      },
+      {
+        "keyword": "цистит после секса",
+        "frequency": 5485
+      },
+      {
+        "keyword": "цистит у мужчин симптомы и лечение",
+        "frequency": 3554
+      },
+      {
+        "keyword": "хронический цистит лечение",
+        "frequency": 2480
+      }
+    ],
+    "content": [
+      {
+        "id": "7853d1f7-8294-4aa2-beae-cc041895d535",
+        "title": "Лечебный массаж при хронической боли: виды и показания",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/lechebnyy-massazh-pri-hronicheskoj-boli/",
+        "done": true
+      },
+      {
+        "id": "ad3e7cfd-e623-4a91-8b46-0a33c3b05737",
+        "title": "Посттравматическая боль: причины, лечение и реабилитация",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/posttravmaticheskaya-bol-lechenie/",
+        "done": true
+      },
+      {
+        "id": "a3ec5d5b-f5cd-44e2-b696-3e462feaa3ba",
+        "title": "Перекос таза: симптомы, причины и методы лечения",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/perkos-taza-simptomy-lechenie/",
+        "done": true
+      },
+      {
+        "id": "cb90e9cd-82b7-4a27-88cf-1d55d34af11a",
+        "title": "Нарушение осанки и хроническая боль: как связаны и что делать",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/narushenie-osanki-hronicheskaya-bol/",
+        "done": true
+      },
+      {
+        "id": "b7064ba2-24c0-4249-b8b3-db7075b1cc95",
+        "title": "Упражнения для укрепления мышц тазового дна",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/uprazhneniya-dlya-myshc-tazovogo-dna/",
+        "done": true
+      },
+      {
+        "id": "767e69fb-9672-4f09-acfc-0d2ad773a4c3",
+        "title": "Хронический мышечный спазм (миофасциальный синдром)",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/hronicheskiy-myshechnyy-spazm-miosfastsialnyy-sindrom/",
+        "done": true
+      },
+      {
+        "id": "4add6a81-5389-4b52-9ee4-d316a9756e03",
+        "title": "Миофасциальные триггерные точки: что это, причины и лечение",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/miofascialnye-triggernye-tochki-chto-eto/",
+        "done": true
+      },
+      {
+        "id": "996bbc9f-a998-4554-b36b-20f4013f6148",
+        "title": "Боль при длительном сидении: мышечные причины",
+        "type": "Статья",
+        "link": "https://www.dr-prof.ru/bol-pri-dlitelnom-sidenii-myshechnye-prichiny/",
+        "done": true
+      },
+      {
+        "id": "7f0c9f82-79e8-4719-b047-eb851e94819e",
+        "title": "Структура: /dr-prof-article — лид",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "1d05a58a-c812-483d-90f7-2a587e933f97",
+        "title": "H1 = маркерный запрос точно или близко; ключ в первом предложении лида",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "0bdc3785-9829-49f9-9771-1cc76a48f2d6",
+        "title": "Плотность: 1 ключ на 400–500 знаков, остальное — LSI и синонимы (не счётчик вхождений)",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "64e33a24-f2e6-406b-bb36-efd1f2516c77",
+        "title": "Интент первичен: инфо-запрос",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "fd2ef7c6-c130-49be-a15c-50d33b0cf0a4",
+        "title": "E-E-A-T (обязательно для медицины): МКБ-10 код + ссылка на клинический протокол/рекомендации + имя врача-рецензента + дата обновления",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "8ec65875-5aa7-4795-bf51-09fda7414044",
+        "title": "Объём: 4 000–6 000 знаков; FAQ = точные формулировки из хвоста семантики",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "b4674dbf-1a97-45ba-b15b-453e845c93c2",
+        "title": "Из каждой статьи — перекрёстная ссылка на страницу услуги (см.",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "2ad09ca6-4c66-4423-a8a8-57782593c78e",
+        "title": "Грыжа поясничного отдела позвоночника: симптомы, степени и лечение без операции → https://www.dr-prof.ru/gryzha-poyasnichnogo-otdela/ (2026-07-03, ID 5607)",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "198fceef-ef8d-490d-beea-1d6829532425",
+        "title": "Кокцигодиния: почему болит копчик и как лечить без операции → https://www.dr-prof.ru/kokczigodinia-bol-v-kopchike/ (2026-07-03, ID 5627)",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "db98774e-97f4-4fb3-984e-54d3984e9d86",
+        "title": "Частое мочеиспускание у женщин: причины и когда это цистит",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      }
+    ],
+    "links": [
+      {
+        "id": "7edc3c4f-8f91-4c68-83aa-603ebbf92e00",
+        "donor": "vd-tv.ru",
+        "anchor": "тазовая боль лечение",
+        "target": "/uslugi/lechenie-tazovoj-boli/",
+        "price": 500,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "ac292afc-7c77-4607-b5e2-ec1743d839a9",
+        "donor": "mama-creative.com",
+        "anchor": "DR PROF",
+        "target": "/",
+        "price": 370,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "e960234d-b47a-4613-b7c1-9f123b45d3a1",
+        "donor": "alai-oli.com",
+        "anchor": "dr-prof.ru",
+        "target": "/",
+        "price": 700,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "d3492597-f37f-426b-9933-f35a4fab175c",
+        "donor": "pancreatus.com",
+        "anchor": "увеличение головки без операции",
+        "target": "/uvelichenie-golovki-polovogo-chlena-...",
+        "price": 350,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "4436a9c6-061b-49aa-bb04-d108c71b7cea",
+        "donor": "ecad.ru",
+        "anchor": "хронический цистит у женщин",
+        "target": "/chto-delat-esli-tsistit-ne-prohodit/",
+        "price": 224,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "276ce5b6-e128-437a-b2e3-f4f58c55fe0a",
+        "donor": "pamyatplus.ru",
+        "anchor": "клиника DR PROF",
+        "target": "/",
+        "price": 170,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "a7e1648a-d681-45ea-9a75-c8dda7c92e84",
+        "donor": "ayurveda-lanka.ru",
+        "anchor": "увеличение полового члена",
+        "target": "/uslugi/uvelichenie-polovogo-organa/",
+        "price": 150,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "9b2ceb17-8a9b-4a31-aa1b-66a540b96f88",
+        "donor": "kozhica.ru",
+        "anchor": "восстановление интимной зоны",
+        "target": "/uslugi/intimnaya-konturnaya-plastika/",
+        "price": 170,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "f0f30f47-f59c-4519-a432-3ce1ec8623c0",
+        "donor": "vd-tv.ru",
+        "anchor": "лечение синдрома тазовой боли",
+        "target": "",
+        "price": 500,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "376cb86d-8543-459a-bb5b-62d1ad792f35",
+        "donor": "zazdorovie.net",
+        "anchor": "хроническая боль в малом тазу",
+        "target": "",
+        "price": 350,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "80cd65e4-3848-44ef-9743-e998efddcbd7",
+        "donor": "belady.online",
+        "anchor": "эстетическая гинекология",
+        "target": "",
+        "price": 350,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "6d386542-fb9b-4983-ab4e-e41763dc3d7c",
+        "donor": "dettka.com",
+        "anchor": "мужская интимная пластика",
+        "target": "",
+        "price": 430,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "fbf29d88-fb64-4779-ac3e-e65ebe7da61b",
+        "donor": "mama-creative.com",
+        "anchor": "тазовая боль у женщин",
+        "target": "",
+        "price": 370,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "ca28648c-995b-4037-a8e3-6af83129b82d",
+        "donor": "ladystory.ru",
+        "anchor": "помощь при тазовой боли",
+        "target": "",
+        "price": 600,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      }
+    ],
+    "docs": [
+      {
+        "id": "7ac53f4e-075a-4f68-bc87-fb3f69c09863",
+        "title": "SEO-аудит — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Аудиты/SEO-аудит — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Аудиты\\SEO-аудит — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "14e0c0a5-74d1-4874-80ac-340154f2fc2a",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "a81d08f0-3363-4654-b6e5-92818b5f273f",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Контент-план.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "474602d8-c5f9-4dcf-8170-40aae61a61a0",
+        "title": "Лендинг СХТБ — ТЗ",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Лендинг СХТБ — ТЗ.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Лендинг СХТБ — ТЗ.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "37fbc0a6-1d57-4c7c-93c0-27b66a3fc8d7",
+        "title": "Написание статей",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Написание статей.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Написание статей.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "b2ba7f7e-9630-4e93-838a-4bab6c7d2a48",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Описание.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "79c0973a-0cd1-40b9-817b-2ed04c83d77f",
+        "title": "Отчёт",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Отчёт.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Отчёт.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "93f0e605-4000-448b-9504-164e9fe32798",
+        "title": "РК СХТБ — стратегия",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/РК СХТБ — стратегия.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\РК СХТБ — стратегия.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "907d6da8-a827-4bba-803c-b0746df2587c",
+        "title": "Семантическое ядро",
+        "type": "Семантика",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Семантическое ядро.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Семантическое ядро.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "2d5e5aa1-a911-4b4c-ad35-eb4f15fb7873",
+        "title": "Июнь 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Ссылочная закупка/Июнь 2026.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Ссылочная закупка\\Июнь 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "420deadb-1461-4686-9d51-80d256d9ea8c",
+        "title": "Май 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/dr-prof.ru/Ссылочная закупка/Май 2026.md",
+        "note": "Obsidian: Проекты\\dr-prof.ru\\Ссылочная закупка\\Май 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  },
+  {
+    "id": "vault-sdoplatforma-ru",
+    "name": "sdoplatforma.ru",
+    "url": "https://sdoplatforma.ru",
+    "theme": "дистанционное обучение, образовательные технологии (EdTech / SaaS)",
+    "region": "Россия",
+    "description": "SaaS-платформа дистанционного обучения (СДО) — каталог 711+ готовых курсов по охране труда, ДПО и рабочим профессиям, инструктажи, ЕТН СИЗ, СУОТ, выдача сертификатов.",
+    "structure": {
+      "positioning": "SaaS-платформа дистанционного обучения (СДО) — каталог 711+ готовых курсов по охране труда, ДПО и рабочим профессиям, инструктажи, ЕТН СИЗ, СУОТ, выдача сертификатов.",
+      "audience": "специалисты по охране труда и кадровые службы, учебные центры ДПО, производственные предприятия",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [
+      {
+        "keyword": "сдо",
+        "frequency": 1116128
+      },
+      {
+        "keyword": "обучение сотрудников",
+        "frequency": 49355
+      },
+      {
+        "keyword": "сдо система",
+        "frequency": 54870
+      },
+      {
+        "keyword": "обучение персонала",
+        "frequency": 38579
+      },
+      {
+        "keyword": "корпоративное обучение",
+        "frequency": 7839
+      },
+      {
+        "keyword": "система дистанционного обучения",
+        "frequency": 7270
+      },
+      {
+        "keyword": "опрос сотрудников",
+        "frequency": 5832
+      },
+      {
+        "keyword": "система обучения персонала",
+        "frequency": 3367
+      },
+      {
+        "keyword": "что такое сдо",
+        "frequency": 2730
+      },
+      {
+        "keyword": "lms система",
+        "frequency": 2658
+      },
+      {
+        "keyword": "онлайн платформа для обучения",
+        "frequency": 2357
+      },
+      {
+        "keyword": "lms платформа",
+        "frequency": 2089
+      },
+      {
+        "keyword": "онлайн обучение в России",
+        "frequency": 1232
+      },
+      {
+        "keyword": "платформа дистанционного обучения",
+        "frequency": 1296
+      },
+      {
+        "keyword": "корпоративная сдо",
+        "frequency": 1557
+      },
+      {
+        "keyword": "сдо что это",
+        "frequency": 1237
+      },
+      {
+        "keyword": "система онлайн обучения",
+        "frequency": 1135
+      },
+      {
+        "keyword": "дистанционное обучение персонала",
+        "frequency": 807
+      }
+    ],
+    "content": [
+      {
+        "id": "1058e050-e44e-48a6-8c8a-f4ba8ea96bf3",
+        "title": "Как перевести программы ДПО в онлайн: пошаговое руководство для учебного центра",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/perevod-dpo-v-onlajn-rukovodstvo-dlya-uchebnogo-centra/",
+        "done": true
+      },
+      {
+        "id": "9c0d6cbe-7f2d-4acc-9230-f7125265cd75",
+        "title": "Онлайн-тестирование в учебном центре: как организовать проверку знаний и выдачу удостоверений",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/onlajn-testirovanie-v-uchebnom-centre/",
+        "done": true
+      },
+      {
+        "id": "8b9acb43-d5cf-4cf6-b72f-55f133f003b4",
+        "title": "Как монетизировать онлайн-курсы через СДО: продажи и привлечение слушателей",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/monetizaciya-onlajn-kursov-cherez-sdo/",
+        "done": true
+      },
+      {
+        "id": "7a81ace8-3725-453c-b50e-38bf332b1030",
+        "title": "Повышение квалификации онлайн vs очно: что выбрать учебному центру",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/povyshenie-kvalifikacii-onlayn-ili-ochno/",
+        "done": true
+      },
+      {
+        "id": "d71896a4-2e57-4057-836f-4008e82e121c",
+        "title": "Как оформить лицензию на образовательную деятельность: что нужно знать",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/licenziya-na-obrazovatelnuyu-deyatelnost/",
+        "done": true
+      },
+      {
+        "id": "1872a1e9-9c07-4dd5-83f2-13366caa0d9a",
+        "title": "СДО для коммерческого учебного центра: автоматизация от записи до выдачи документов",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/sdo-dlya-kommercheskogo-uchebnogo-tsentra/",
+        "done": true
+      },
+      {
+        "id": "7bb6f09a-93a7-4fa6-99e8-f880fcd94ff1",
+        "title": "Как организовать итоговую аттестацию слушателей ДПО в дистанционном формате",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/itogovaya-attestaciya-dpo-onlayn/",
+        "done": true
+      },
+      {
+        "id": "1b4685de-4f5a-4ff2-b21b-abbe2b7c92db",
+        "title": "Зачем учебному центру CRM: связка CRM + СДО для управления слушателями",
+        "type": "Статья",
+        "link": "https://sdoplatforma.ru/stati/crm-dlya-uchebnogo-centra-svyazka-s-sdo/",
+        "done": true
+      },
+      {
+        "id": "98ff0e50-39e3-417a-8329-73e09ef7c71b",
+        "title": "Онбординг через СДО: как ускорить адаптацию новых сотрудников",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "fbdf84d0-6ba3-4aad-a947-348467b2e309",
+        "title": "Обязательное обучение персонала онлайн: пожарная безопасность, антикоррупция, охрана труда",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "4f55385c-b0a5-4e1b-8a13-c1b792c7ae09",
+        "title": "Как создать корпоративный университет с нуля: этапы и инструменты",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "69673b6f-f678-4568-a603-76dcdafdc42f",
+        "title": "Аттестация персонала через СДО: как автоматизировать оценку знаний",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "0fcd40ff-7925-466d-9141-15ea8187a1e4",
+        "title": "Как мотивировать сотрудников проходить обучение: методы и инструменты",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "44cdb3e6-e7c8-463f-b464-dc65a4672ce0",
+        "title": "KPI обучения персонала: как измерить эффективность корпоративного обучения",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "6acad6fe-367f-4051-be9f-c33096c6f7e5",
+        "title": "Обучение франчайзи через СДО: как поддерживать стандарты сети",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "81a2f831-40dc-49a3-abe1-a88df0c0911f",
+        "title": "Обучение руководителей онлайн: форматы и программы для развития управленческих навыков",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "c7b77a81-19a8-4c19-bd28-97e16afc496f",
+        "title": "Вебинары для обучения персонала: как проводить живые занятия и хранить записи",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "fe6c8714-b3be-4716-a25f-bf5e6cdc4e63",
+        "title": "Moodle (Мудл) — что это такое, плюсы и минусы бесплатной LMS",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      }
+    ],
+    "links": [
+      {
+        "id": "b27dd49f-6825-40d7-94d7-bb4d7994889e",
+        "donor": "tlt.volga.news",
+        "anchor": "sdoplatforma.ru",
+        "target": "/",
+        "price": 300,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "ee535f00-262a-4ca9-bf63-9d083555bca3",
+        "donor": "kircbs.ru",
+        "anchor": "СДО Платформа",
+        "target": "/",
+        "price": 599,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "61443242-fcfc-4384-9f66-64c3bcd19d79",
+        "donor": "rtsu.tj",
+        "anchor": "СДО для центров ДПО",
+        "target": "/dlya-uchebnyh-centrov-dpo/",
+        "price": 399,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "5c238a3a-c5e6-4a88-bd7a-3c59fb8d59b0",
+        "donor": "mk.md",
+        "anchor": "дистанционное обучение для учебных центров",
+        "target": "/dlya-uchebnyh-centrov-dpo/",
+        "price": 499,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "26be1b94-a62e-4c0d-acba-606463816c18",
+        "donor": "english2017.ru",
+        "anchor": "корпоративное обучение онлайн",
+        "target": "/dlya-korporativnogo-obucheniya/",
+        "price": 299,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "333060af-1888-49a4-bb3c-903b92fbea43",
+        "donor": "lesyadraw.ru",
+        "anchor": "обучение сотрудников через СДО",
+        "target": "/dlya-korporativnogo-obucheniya/",
+        "price": 240,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "c689d7db-9203-4249-b636-230b01608f37",
+        "donor": "edu-nv.ru",
+        "anchor": "СДО",
+        "target": "/",
+        "price": 1000,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "2329c681-46ba-45a5-bfb4-1f100b81c03b",
+        "donor": "snauka.ru",
+        "anchor": "система дистанционного обучения",
+        "target": "/",
+        "price": 1600,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "0347fc12-6a1f-4600-991e-5b6c509404e4",
+        "donor": "iworknet.ru",
+        "anchor": "СДО для обучения сотрудников",
+        "target": "/",
+        "price": 400,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "348dae9b-fdb9-44c0-8324-b34e5fa187b2",
+        "donor": "seopmr.ru",
+        "anchor": "СДО для учебных центров ДПО",
+        "target": "/dlya-uchebnyh-centrov-dpo/",
+        "price": 368,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "54988bb6-d348-49a8-9dfc-2963734deaa5",
+        "donor": "winblog.ru",
+        "anchor": "платформа дистанционного обучения для ДПО",
+        "target": "/dlya-uchebnyh-centrov-dpo/",
+        "price": 500,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "98d6a07b-11d0-4bca-8237-16599e832d5c",
+        "donor": "businessmix.ru",
+        "anchor": "онлайн-обучение в учебном центре",
+        "target": "/dlya-uchebnyh-centrov-dpo/",
+        "price": 250,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "2ce43107-6941-44d8-a5b6-1a0833fcc152",
+        "donor": "sport-weekend.com",
+        "anchor": "",
+        "target": "",
+        "price": 0,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      }
+    ],
+    "docs": [
+      {
+        "id": "47a6e485-9276-41c7-8bb2-8ed1febbaf9c",
+        "title": "SEO-аудит — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Аудиты/SEO-аудит — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Аудиты\\SEO-аудит — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "cb0fddaf-15eb-414b-9d2f-65224a9a32a7",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "b869a4fb-3397-4faf-b7a1-920cb51a17b3",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Контент-план.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "ff36865e-5be7-479b-adcb-09b42b70f6a9",
+        "title": "Написание статей",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Написание статей.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Написание статей.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "961921e5-49f4-4d4b-8e39-8db1e0f162d3",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Описание.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "9f157ff2-9881-47f5-9cdd-2645f394429f",
+        "title": "Отчёт",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Отчёт.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Отчёт.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "933585c0-bc19-4a30-92c6-9901130fd87b",
+        "title": "Семантическое ядро",
+        "type": "Семантика",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Семантическое ядро.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Семантическое ядро.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "3bb1b00c-914c-4e8d-8307-e87f80e32eee",
+        "title": "Июль 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Ссылочная закупка/Июль 2026.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Ссылочная закупка\\Июль 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "1c9ef890-4a06-4a21-be38-c2277bd9330d",
+        "title": "Июнь 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/sdoplatforma.ru/Ссылочная закупка/Июнь 2026.md",
+        "note": "Obsidian: Проекты\\sdoplatforma.ru\\Ссылочная закупка\\Июнь 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  },
+  {
+    "id": "vault-вечная-память-ritualnyeuslugi-com",
+    "name": "Вечная память — ritualnyeuslugi.com",
+    "url": "https://ritualnyeuslugi.com/",
+    "theme": "ритуальная флористика, похоронные принадлежности",
+    "region": "Россия",
+    "description": "Ритуальная флористика в Московской области, платформа Тильда.",
+    "structure": {
+      "positioning": "Ритуальная флористика в Московской области, платформа Тильда.",
+      "audience": "Уточняется по заметкам Obsidian",
+      "sections": [
+        "Описание",
+        "Семантическое ядро",
+        "Контент-план",
+        "Задачи на месяц",
+        "Аудиты",
+        "Ссылочная закупка"
+      ],
+      "aiTools": [
+        "Obsidian vault: источник проектных данных",
+        "Ollama: классификация тематики и интентов",
+        "Parser: title/h1/meta/sitemap",
+        "SEO editor: ТЗ, контент и закупка ссылок"
+      ]
+    },
+    "semantic": [
+      {
+        "keyword": "ритуальные услуги",
+        "frequency": 184604
+      },
+      {
+        "keyword": "ритуальный венок",
+        "frequency": 15169
+      },
+      {
+        "keyword": "венки на похороны",
+        "frequency": 13994
+      },
+      {
+        "keyword": "венок на похороны цена",
+        "frequency": 13994
+      },
+      {
+        "keyword": "венки на похороны виды / траурные венки",
+        "frequency": 3558
+      },
+      {
+        "keyword": "венок на могилу",
+        "frequency": 2880
+      },
+      {
+        "keyword": "венок из искусственных цветов",
+        "frequency": 1733
+      },
+      {
+        "keyword": "траурный венок",
+        "frequency": 4696
+      },
+      {
+        "keyword": "венок на похороны купить",
+        "frequency": 4696
+      },
+      {
+        "keyword": "купить венок на похороны",
+        "frequency": 4696
+      },
+      {
+        "keyword": "венки из живых цветов",
+        "frequency": 2246
+      },
+      {
+        "keyword": "венки из искусственных цветов",
+        "frequency": 1733
+      },
+      {
+        "keyword": "надпись на венок",
+        "frequency": 4883
+      },
+      {
+        "keyword": "ритуальные венки москва",
+        "frequency": 82
+      },
+      {
+        "keyword": "траурные венки москва",
+        "frequency": 228
+      },
+      {
+        "keyword": "заказать венок на похороны",
+        "frequency": 672
+      },
+      {
+        "keyword": "ритуальная корзина",
+        "frequency": 2018
+      },
+      {
+        "keyword": "траурная корзина",
+        "frequency": 646
+      }
+    ],
+    "content": [
+      {
+        "id": "61d41fda-31f3-4e43-b1ea-2d9334f047ad",
+        "title": "Как выбрать венок на похороны: виды, размеры и оформление",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/3yolpkhce1-kak-vibrat-venok-na-pohoroni-vidi-razmer",
+        "done": true
+      },
+      {
+        "id": "f7022fd5-be98-48d1-b8b3-fe34ee2fd635",
+        "title": "Надпись на венок на похороны: примеры коротких и уместных фраз",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/nenny6u161-nadpis-na-venok-na-pohoroni-primeri-fraz",
+        "done": true
+      },
+      {
+        "id": "c4849633-1705-455d-a171-d911071c9f61",
+        "title": "Траурные венки: какие бывают и чем отличаются",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/786ijuryy1-traurnie-venki-kakie-bivayut-i-chem-otli",
+        "done": true
+      },
+      {
+        "id": "b554fb55-4c7a-4d6e-9637-ef3113cc530d",
+        "title": "Композиции на гроб: какие бывают и когда их заказывают",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/47p96c8g91-kompozitsii-na-grob-kakie-bivayut-i-kogd",
+        "done": true
+      },
+      {
+        "id": "e28588cd-38d7-496e-8f76-aa55d88cdb10",
+        "title": "Цветы на похороны: какие выбрать и что считается уместным",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/v1om08rj61-tsveti-na-pohoroni-kakie-vibrat-i-chto-s",
+        "done": true
+      },
+      {
+        "id": "3b2de466-adf6-4d87-8b6d-89b4cefa7537",
+        "title": "Организация похорон под ключ: что входит в услугу",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/j5ljh55061-organizatsiya-pohoron-pod-klyuch-chto-vh",
+        "done": true
+      },
+      {
+        "id": "c2cf5644-454d-4828-80f4-4ae9f8b60fd3",
+        "title": "Что нужно отвезти в морг, пока там находится умерший",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/fni34v6tz1-chto-nuzhno-otvezti-v-morg-polnii-spisok",
+        "done": true
+      },
+      {
+        "id": "1266848d-4b52-473b-92d6-559327558f96",
+        "title": "Что делать, если человек умер в больнице: порядок действий",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/vdnvsmbfz1-chto-delat-esli-chelovek-umer-v-bolnitse",
+        "done": true
+      },
+      {
+        "id": "da91c8af-1cdd-4a5a-9381-3a55f306fc02",
+        "title": "Живые или искусственные венки: что выбрать для похорон",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/r30opj9hd1-zhivie-ili-iskusstvennie-venki-chto-vibr",
+        "done": true
+      },
+      {
+        "id": "d56713c5-3636-43c8-9694-8058f269d390",
+        "title": "Венок, корзина или композиция на гроб: в чём разница",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/du1v83p2f1-venok-korzina-ili-kompozitsiya-na-grob-v",
+        "done": true
+      },
+      {
+        "id": "f1237d3e-92f1-402d-ba12-6e6b1af1397a",
+        "title": "Как заказать венок с доставкой на похороны",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/venok-s-dostavkoy-na-pokhorony",
+        "done": true
+      },
+      {
+        "id": "138cc2eb-318e-4e6f-81bc-201beb76a148",
+        "title": "Какие цветы выбрать для прощания с мужчиной",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/cvety-dlya-proshchaniya-s-muzhchinoj",
+        "done": true
+      },
+      {
+        "id": "763566ee-410b-4068-a66a-5603c71142d5",
+        "title": "Какие цветы выбрать для прощания с женщиной",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/cvety-dlya-proshchaniya-s-zhenshchinoy",
+        "done": true
+      },
+      {
+        "id": "17b4a610-f2dc-4916-90a1-efe191ffbead",
+        "title": "Белые, красные и бордовые цветы в траурной флористике",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/cveta-v-traurnoj-floristike",
+        "done": true
+      },
+      {
+        "id": "274b0a9c-3fe9-41a6-9293-26f4fc386b9a",
+        "title": "Оформление зала прощания цветами",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/j9o8tmkp71-oformlenie-zala-proschaniya-tsvetami",
+        "done": true
+      },
+      {
+        "id": "72bcad29-9e24-4448-8aa4-b37fbe41b06f",
+        "title": "Траурные корзины с цветами: виды, выбор, оформление",
+        "type": "Статья",
+        "link": "http://ritualnyeuslugi.com/tpost/zitblmrvy1-traurnie-korzini-s-tsvetami-vidi-vibor-o",
+        "done": true
+      },
+      {
+        "id": "569a7000-2035-4a68-8650-3d960b6b79d7",
+        "title": "Когда ставят памятник после похорон и почему нельзя сразу",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      },
+      {
+        "id": "94545fbd-f862-4361-aeb3-4c0424d55977",
+        "title": "Временное надгробие на могилу: зачем нужно и что выбрать",
+        "type": "Статья",
+        "link": "",
+        "done": false
+      }
+    ],
+    "links": [
+      {
+        "id": "96e9560e-6928-4d49-b116-ddd85b431396",
+        "donor": "vladikavkaz.bezformata.com",
+        "anchor": "ritualnyeuslugi.com",
+        "target": "Главная",
+        "price": 500,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 5550
+      },
+      {
+        "id": "343392e2-7b9d-4e26-9729-fdfbad6d483f",
+        "donor": "smolensk.bezformata.com",
+        "anchor": "Ритуальные услуги",
+        "target": "Главная",
+        "price": 600,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 5300
+      },
+      {
+        "id": "f612a2ae-4825-499e-a6cf-a236ede76218",
+        "donor": "sevastopol-news.com",
+        "anchor": "траурные венки в Москве",
+        "target": "/venki",
+        "price": 375,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 330
+      },
+      {
+        "id": "e4bcb408-9d38-4819-a1f2-8c744eb73f19",
+        "donor": "pedagogic.ru",
+        "anchor": "купить траурные букеты",
+        "target": "/bukety",
+        "price": 550,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 220
+      },
+      {
+        "id": "ba944e09-a558-4249-9e9b-e7d1cc9a19da",
+        "donor": "ufa-town.ru",
+        "anchor": "украшение зала прощания",
+        "target": "/dekor-zalov",
+        "price": 480,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 220
+      },
+      {
+        "id": "085b40c1-5bd0-4f36-922f-efa4f973ab2f",
+        "donor": "fitnesstrener.ru",
+        "anchor": "цветочные композиции на гроб",
+        "target": "/kompozicii-na-grob",
+        "price": 498,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 210
+      },
+      {
+        "id": "6ebecc47-2ba7-4fa6-87e5-ecf5dda9a7af",
+        "donor": "health.sarbc.ru",
+        "anchor": "траурные венки на похороны",
+        "target": "/venki",
+        "price": 600,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "845edc7f-2171-4abd-9908-f8a7ed977ea3",
+        "donor": "proulyanovsk.ru",
+        "anchor": "ритуальная служба в Москве",
+        "target": "/",
+        "price": 460,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "afaf5be7-16a6-40aa-9c68-1386c9b40af1",
+        "donor": "womenmag.ru",
+        "anchor": "траурные букеты",
+        "target": "/bukety",
+        "price": 550,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "8a6fd593-91a2-4223-a61a-bf963b229d88",
+        "donor": "psylib.org",
+        "anchor": "оформление зала прощания",
+        "target": "/dekor-zalov",
+        "price": 588,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "01acda20-9e18-45c5-b34a-0da4f5e13c3f",
+        "donor": "flowers-house.ru",
+        "anchor": "цветы на гроб",
+        "target": "/kompozicii-na-grob",
+        "price": 588,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      },
+      {
+        "id": "bf6e9446-f08f-46c2-b851-4fd9424605ef",
+        "donor": "metallurgprom.org",
+        "anchor": "https://ritualnyeuslugi.com",
+        "target": "/",
+        "price": 350,
+        "status": "Из Obsidian",
+        "dr": 0,
+        "traffic": 0
+      }
+    ],
+    "docs": [
+      {
+        "id": "cff109bc-9c65-4b31-ba83-7a8c57d918be",
+        "title": "SEO-аудит — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/SEO-аудит — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\SEO-аудит — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "58359f79-deec-4604-8588-5979c07b6d77",
+        "title": "SEO-аудит — 2026-06-26",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/SEO-аудит — 2026-06-26.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\SEO-аудит — 2026-06-26.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "2cb62830-56b8-4d04-a9db-5e426b94c310",
+        "title": "Анализ Яндекс.Директ — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/Анализ Яндекс.Директ — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\Анализ Яндекс.Директ — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "a2aebf8d-05fb-4d3a-b3db-bca0a5d48bb7",
+        "title": "Маркерные запросы — 2026-06-26",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/Маркерные запросы — 2026-06-26.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\Маркерные запросы — 2026-06-26.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "96b5bf02-2a92-46b8-aae3-0371af8402e9",
+        "title": "ТЗ на дизайн и UX главной — 2026-06-29",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/ТЗ на дизайн и UX главной — 2026-06-29.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\ТЗ на дизайн и UX главной — 2026-06-29.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "013e1c2f-9703-466f-b66c-6d68702dee48",
+        "title": "ТЗ на доработку главной — 2026-06-26",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/ТЗ на доработку главной — 2026-06-26.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\ТЗ на доработку главной — 2026-06-26.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "535c8207-df98-4f5d-834c-1606545ebb58",
+        "title": "ТЗ на каталог — 2026-06-29",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/ТЗ на каталог — 2026-06-29.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\ТЗ на каталог — 2026-06-29.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "1b732edc-4192-4741-aba2-eeeacbc8b347",
+        "title": "ТЗ на посадочные категории — 2026-06-26",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/ТЗ на посадочные категории — 2026-06-26.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\ТЗ на посадочные категории — 2026-06-26.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "3f1f5e52-a7a7-4df9-965b-c49e1c5a8459",
+        "title": "ТЗ по категориям — 2026-06-20",
+        "type": "Аудит",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Аудиты/ТЗ по категориям — 2026-06-20.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Аудиты\\ТЗ по категориям — 2026-06-20.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "c11ed3fb-9bba-46d5-b6be-533840b921e8",
+        "title": "Задачи на месяц",
+        "type": "Задачи",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Задачи на месяц.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Задачи на месяц.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "9ac57bcc-5edc-453c-aee5-5b91d6231785",
+        "title": "Контент-план",
+        "type": "Контент-план",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Контент-план.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Контент-план.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "54addbf8-7e99-48fb-9de5-a5a621ab03d2",
+        "title": "Описание",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Описание.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Описание.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "6b40f7db-ca41-48dd-8c3e-ce2589c620cf",
+        "title": "Отчёт",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Отчёт.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Отчёт.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "f3a15fcf-d3c7-40fa-9cc2-4adb8bef6e69",
+        "title": "Семантическое ядро",
+        "type": "Семантика",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Семантическое ядро.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Семантическое ядро.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "0e3856e6-cce1-4e90-87e9-3c3bedc3ddfc",
+        "title": "Июль 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Ссылочная закупка/Июль 2026.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Ссылочная закупка\\Июль 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      },
+      {
+        "id": "229eb35a-2f94-481f-a151-ff545f1f2697",
+        "title": "Июнь 2026",
+        "type": "Документ",
+        "url": "file:///C:/Users/ksntired/Downloads/ksntired_work/Проекты/Вечная память (ritualnyeuslugi.com)/Ссылочная закупка/Июнь 2026.md",
+        "note": "Obsidian: Проекты\\Вечная память (ritualnyeuslugi.com)\\Ссылочная закупка\\Июнь 2026.md",
+        "fileName": "",
+        "fileType": "",
+        "fileSize": 0,
+        "fileData": ""
+      }
+    ]
+  }
+];
 let state=load(),selected=state.selected||state.projects[0]?.id,tab='structure',db=null,dbReady=false;
 const $=s=>document.querySelector(s),body=$('#body');
 initSupabase();bind();render();
 function initSupabase(){try{if(window.supabase){db=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);$('#syncBadge').textContent='supabase ready';dbReady=true}}catch(e){console.warn(e)}}
-function load(){try{let x=JSON.parse(localStorage.getItem(store));if(x?.projects?.length)return x}catch(e){}return{projects:demo,selected:demo[0].id}}
+function load(){try{let x=JSON.parse(localStorage.getItem(store));if(x?.projects?.length)return mergeSeeds(x)}catch(e){}return{projects:demo,selected:demo[0].id}}
+function mergeSeeds(x){let ids=new Set(x.projects.map(p=>p.id));let added=false;for(let p of demo){if(!ids.has(p.id)){x.projects.push(p);added=true}}if(added)localStorage.setItem(store,JSON.stringify(x));return x}
 function save(){state.selected=selected;localStorage.setItem(store,JSON.stringify(state))}
 function cur(){return state.projects.find(p=>p.id===selected)||state.projects[0]}
 function bind(){
@@ -69,4 +2762,5 @@ function attr(v){return esc(v).replace(/'/g,'&#39;')}
 </script>
 </body>
 </html>
+
 
